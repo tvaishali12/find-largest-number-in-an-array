@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    //Q. Find the largest number in an array ?
+
+    const numbers = [10, 2, 13, 4, 90, 6, 100];
+    function larger(arrayval) {
+      if (!Array.isArray(arrayval)) {
+        return "plz enter valid input";
+      }
+      var value = arrayval[0];
+      for (var i = 0; i < arrayval.length; i++) {
+        var newnumbers = arrayval[i];
+        if (newnumbers >= value) {
+          value = newnumbers;
+        }
+      }
+      return value;
+    }
+    larger();
+    console.log(larger(numbers));
+  </script>
+</html>
